@@ -1,0 +1,21 @@
+{
+    "apiVersion": "v1",
+    "kind": "Route",
+    "metadata": {
+        "creationTimestamp": null,
+        "labels": {
+            "template": "application-template-stibuild"
+        },
+                "name": "route-edge"
+
+    },
+    "spec": {
+                "host": "www.exampleexzy.com",
+        "to": {
+            "kind": "Service",
+                    "name": "hello-nginx"
+
+        }
+    },
+    "status": {}
+}
